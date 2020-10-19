@@ -1,0 +1,27 @@
+{
+  "name": "movie-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiaraha-funny/Movie-search.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiaraha-funny/Movie-search/issues"
+  },
+  "homepage": "https://github.com/Tiaraha-funny/Movie-search#readme",
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+"browserslist": [
+  "last 1 chrome versions"
+]
+
+}
