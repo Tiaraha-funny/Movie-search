@@ -28297,20 +28297,22 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function MoviesCard(poster_path, title, release_date, vote_averview, vote_average) {
+function MoviesCard({
+  movie
+}) {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "card"
   }, /*#__PURE__*/_react.default.createElement("img", {
     className: "card--image",
-    src: `https://image.tmdb.org/t/p/w185_and_h278_bestv2/${poster_path}`,
-    alt: title + " poster"
+    src: `https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`,
+    alt: movie.title + " poster"
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "card--content"
   }, /*#__PURE__*/_react.default.createElement("h3", {
     className: "card--title"
-  }, title), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("small", null, "RELEASE DATE: ", release_date)), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("small", null, "RATING: ", vote_average)), /*#__PURE__*/_react.default.createElement("p", {
+  }, movie.title), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("small", null, "RELEASE DATE: ", movie.release_date)), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("small", null, "RATING: ", movie.vote_average)), /*#__PURE__*/_react.default.createElement("p", {
     className: "card--desc"
-  }, vote_averview)));
+  }, movie.vote_averview)));
 }
 
 var _default = MoviesCard;
@@ -28429,7 +28431,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49842" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57047" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
